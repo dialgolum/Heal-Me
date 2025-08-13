@@ -15,7 +15,7 @@ def load_kb(kb_path: str = None):
         p = Path(__file__).resolve().parents[2] / "data" / "conditions.json"
 
     with open(p, "r", encoding="utf-8") as f:
-        conditions = json.loads(f)
+        conditions = json.load(f)
 
     return conditions
 
