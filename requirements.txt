@@ -1,0 +1,21 @@
+fastapi
+uvicorn[standard]
+streamlit
+requests
+pydantic
+spacy
+transformers
+sentence-transformers
+faiss-cpu            # or hnswlib as an alternative
+rank-bm25
+whoosh               # lightweight lexical IR / optional
+scikit-learn
+nltk
+numpy
+pandas
+cryptography
+pyjwt
+bcrypt
+python-multipart
+pydub                # optional, audio handling
+openai-whisper       # optional, local speech-to-text (heavy)
