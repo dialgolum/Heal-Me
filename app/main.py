@@ -1,14 +1,15 @@
 import sys
 from pathlib import Path
+
+# Add project root to sys.path BEFORE importing from src
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.append(str(ROOT_DIR))
+
 import streamlit as st
 import pandas as pd
 from src.agents.classifier import SymptomClassifier
 from src.agents.matcher import ConditionMatcher
 from src.agents.advice import AdviceAgent
-
-# Add project root to sys.path
-ROOT_DIR = Path(__file__).resolve().parents[1]
-sys.path.append(str(ROOT_DIR))
 
 st.set_page_config(page_title="Symptom Checker (Prototype)", layout="wide")
 
