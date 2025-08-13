@@ -1,0 +1,21 @@
+# python
+__pycache__/
+*.pyc
+.env
+.env.*
+.venv/
+.ipynb_checkpoints/
+
+# streamlit
+.streamlit/
+*/__pycache__/
+
+# data & models
+kb/index/*.faiss
+data/
+secrets.json
+
+# OS/IDE
+.DS_Store
+.idea/
+.vscode/
